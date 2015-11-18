@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>New Article</title>
+  </head>
+
+  <body>
+    <h2>New Article</h2>
+      <form action="/articles/new" method="post" >
+        <ul style="list-style-type:none">
+          <li>
+            <label for="article_name">Article Name:</label>
+            <input type="text" id="article_name" name="article_name"  required>
+          </li>
+
+          <li>
+            <label for="article_url">Article url:</label>
+            <input type="url" id="article_url" name="article_url" required>
+          </li>
+
+          <li>
+            <label for="article_description">Article Description:</label>
+            <input type="text" minlength=20 id="article_description" name="article_description" required>
+          </li>
+
+          <li>
+            <input type="submit">
+          </li>
+        </ul>
+      </form>
+  </body>
+</html>

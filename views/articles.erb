@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Articles</title>
+  </head>
+
+  <body>
+    <h2>Articles</h2>
+    <ul>
+      <% @articles.each do |article| %>
+      <li>Article Name: <%= article[0] %></li>
+        <ul>
+          <li>url: <a href="<%= article[1] %>" target="_blank"><%= article[1] %></a></li>
+          <li>Description: <%= article[2] %></li>
+        </ul>
+      </li>
+      <br>
+      <% end %>
+    </ul>
+  </body>
+</html>
